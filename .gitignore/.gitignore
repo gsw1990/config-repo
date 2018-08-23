@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: product-sever
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: password
+    url: jdbc:mysql://localhost:3306/order?useUnicode=true&characterEncoding=utf8       # 数据库名称
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+    #,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+
+
+
+logging:
+  level:
+    com.gsw.mapper: debug
+server:
+  port: 8050
